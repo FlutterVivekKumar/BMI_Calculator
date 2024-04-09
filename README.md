@@ -37,8 +37,11 @@ This BMI Calculator is a simple Flutter application that calculates Body Mass In
 
 ## Screenshots
 
-      
-![](https://firebasestorage.googleapis.com/v0/b/msp-project-215c5.appspot.com/o/Screenshot_1712658611.png?alt=media&token=3e4b9731-9607-4324-8a4b-5b80d8237d38)   |  ![](https://firebasestorage.googleapis.com/v0/b/msp-project-215c5.appspot.com/o/Screenshot_1712658613.png?alt=media&token=34cddb9f-794a-4102-9cb7-7e925e41756e) | ![](https://firebasestorage.googleapis.com/v0/b/msp-project-215c5.appspot.com/o/Screenshot_1712658616.png?alt=media&token=65eadcba-cef1-448c-9979-f6840943637a) | ![](https://firebasestorage.googleapis.com/v0/b/msp-project-215c5.appspot.com/o/Screenshot_1712658620.png?alt=media&token=d69d80de-105f-4467-9e64-d0333e68ab55) |
+![Screenshot 1](https://firebasestorage.googleapis.com/v0/b/msp-project-215c5.appspot.com/o/Screenshot_1712658611.png?alt=media&token=3e4b9731-9607-4324-8a4b-5b80d8237d38)
+![Screenshot 2](https://firebasestorage.googleapis.com/v0/b/msp-project-215c5.appspot.com/o/Screenshot_1712658613.png?alt=media&token=34cddb9f-794a-4102-9cb7-7e925e41756e)
+![Screenshot 3](https://firebasestorage.googleapis.com/v0/b/msp-project-215c5.appspot.com/o/Screenshot_1712658616.png?alt=media&token=65eadcba-cef1-448c-9979-f6840943637a)
+![Screenshot 4](https://firebasestorage.googleapis.com/v0/b/msp-project-215c5.appspot.com/o/Screenshot_1712658620.png?alt=media&token=d69d80de-105f-4467-9e64-d0333e68ab55)
+
 ## Getting Started
 
 To get a local copy up and running follow these simple steps.
