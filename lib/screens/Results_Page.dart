@@ -1,0 +1,110 @@
+
+import 'package:bmi_calculator/Components/BottomContainer_Button.dart';
+import 'package:bmi_calculator/constants.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_sizer/flutter_sizer.dart';
+import '../Components/Reusable_Bg.dart';
+
+class ResultPage extends StatelessWidget {
+  final String resultText;
+  final String bmi;
+  final String advise;
+  final Color textColor;
+
+  const ResultPage(
+      {super.key, required this.textColor,
+      required this.resultText,
+      required this.bmi,
+      required this.advise});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        centerTitle: true,
+        title: const Center(
+          child: Text('BMI CALCULATOR'),
+
+        ),
+      ),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Expanded(
+            child: Container(
+              padding: const EdgeInsets.all(15.0),
+              alignment: Alignment.bottomCenter,
+              child:  Text(
+                'Your Result',
+                style:
+                ktitleTextStyle(context),
+              ),
+            ),
+          ),
+          Expanded(
+            flex: 5,
+            child: ReusableBg(
+              colour: kactiveCardColor,
+              cardChild: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Text(
+                    resultText,
+                    style: TextStyle(
+                      color: textColor,
+                      fontSize: Adaptive.sp(26),
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Text(
+                    bmi,
+                    style: kBMITextStyle,
+                  ),
+                   Text(
+                    'Normal BMI range:',
+                    style: klabelTextStyle,
+                  ),
+                   Text(
+                    '18.5 - 25 kg/m2',
+                    style: kBodyTextStyle,
+                  ),
+                  Text(
+                    advise,
+                    textAlign: TextAlign.center,
+                    style: kBodyTextStyle,
+                  ),
+                  const SizedBox(
+                    height: 15.0,
+                  ),
+                  RawMaterialButton(
+                    onPressed: () {},
+                    constraints: const BoxConstraints.tightFor(
+                      width: 200.0,
+                      height: 56.0,
+                    ),
+                    fillColor: const Color(0xFF4C4F5E),
+                    elevation: 0.0,
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10.0)),
+                    child:  Text(
+                      'SAVE RESULT',
+                      style: kBodyTextStyle,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          BottomContainer(
+              text: 'RE-CALCULATE',
+              onTap: () {
+                Navigator.pop(context);
+              }),
+        ],
+      ),
+    );
+  }
+}
